@@ -1,0 +1,38 @@
+﻿<Page x:Class="KTL_game.Pages.SetupGame"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+      xmlns:local="clr-namespace:KTL_game.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="{StaticResource Height}" d:DesignWidth="{StaticResource Width}"
+      Title="SetupGame">
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*" />
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="0.5*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="1" Grid.ColumnSpan="2" Style="{StaticResource TitleLabelStyle}">Setup the game</Label>
+        <Label Grid.Row="2" Style="{StaticResource InGameLabelStyle}">Gameplay length</Label>
+        <TextBox Name="GameLengthTextBox" Grid.Row="2" Grid.Column="1" Style="{StaticResource SetupGameTextBoxStyle}"></TextBox>
+        <Label Grid.Row="3" Style="{StaticResource InGameLabelStyle}">Length of series </Label>
+        <TextBox Name="SeriesLengthTextBox" Grid.Row="3" Grid.Column="1" Style="{StaticResource SetupGameTextBoxStyle}"></TextBox>
+        <Label Grid.Row="4" Style="{StaticResource InGameLabelStyle}"> Number of colors</Label>
+        <TextBox Name="ColorCountTextBox" Grid.Row="4" Grid.Column="1" Style="{StaticResource SetupGameTextBoxStyle}" ></TextBox>
+        <Label Grid.Row="5" Style="{StaticResource InGameLabelStyle}">Number of colors in list</Label>
+        <TextBox Name="ListColorCountTextBox" Grid.Row="5" Grid.Column="1" Style="{StaticResource SetupGameTextBoxStyle}"></TextBox>
+        <Button Name="PrevPageButton" Grid.Row="6" Click="PrevPageButton_Click">Prev</Button>
+        <Button Name="NextPageButton" Grid.Row="6" Grid.Column="1" Click="NextPageButton_Click"> Next</Button>
+    </Grid>
+</Page>

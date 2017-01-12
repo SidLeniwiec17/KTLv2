@@ -1,0 +1,25 @@
+﻿<Page x:Class="KTL_game.Pages.GameplayPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:KTL_game.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="{StaticResource Height}" d:DesignWidth="{StaticResource Width}"
+      Title="GameplayPage">
+    
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="50" />
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" >
+            <Label Name="GameLengthLabel" Style="{StaticResource GameLabelStyle}" />
+            <Label Name="SeriesLengthLabel" Style="{StaticResource GameLabelStyle}"/>
+            <Label Name="ColorCountLabel" Style="{StaticResource GameLabelStyle}"/>
+            <Label Name="ColorCountListLabel" Style="{StaticResource GameLabelStyle}"/>
+        </StackPanel>
+        <Grid Grid.Row="1" Name="GameGrid"/>
+    </Grid>
+</Page>
